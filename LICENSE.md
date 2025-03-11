@@ -1,6 +1,6 @@
 ## Software License
 
-The software for the **DataLens** dashboard is licensed under the **MIT License**. 
+The software for the **CineInsights** dashboard is licensed under the **MIT License**. 
 You are free to use, modify, and distribute the software, provided that you include this license in all copies or substantial portions of the software. 
 The software is provided "as is", without warranty of any kind.
 
