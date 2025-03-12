@@ -29,19 +29,19 @@ The dataset used in this app is sourced from [Kaggle](https://www.kaggle.com/dat
 To run this app locally, ensure you have the following installed:
 - [R](https://cran.r-project.org/)
 - [RStudio](https://rstudio.com/products/rstudio/download/)
-- Required R libraries: `renv`, `shiny`, `tidyverse`, `plotly`, `ggplot2`, `shinydashboard`, `DT`, `wordcloud2`
+- Required R libraries: `renv`, `shiny`, `tidyverse`, `plotly`, `ggplot2`, `shinydashboard`, `DT`, `wordcloud2`, `rsconnect`
 
 ### Steps to Install:
 
 1. In `bash` terminal, clone the repository to your local machine:
    ```bash
-   git clone https://github.com/your-repository/data-analyst-jobs-canada.git
-   cd [data-analyst-jobs-canada]
+   git clone https://github.ubc.ca/mds-2024-25/DSCI_532_individual-assignment_yuci21st.git
+   cd DSCI_532_individual-assignment_yuci21st
    ```
 
 2. Open RStudio and run the following command in the R console to install the required libraries (if not already installed):
     ```R
-    install.packages(c("renv", "shiny", "tidyverse", "plotly", "ggplot2", "shinydashboard", "DT", "wordcloud2"))
+    install.packages(c("renv", "shiny", "tidyverse", "plotly", "ggplot2", "shinydashboard", "DT", "wordcloud2", "rsconnect"))
     ```
 
 3. Navigate to the project folder and run the following R command in the console to restore the environment:
@@ -54,7 +54,7 @@ To run this app locally, ensure you have the following installed:
     shiny::runApp("app.R")
     ```
 
-5. The app will launch in your default web browser. You can start interacting with the data and explore job market insights.
+5. The app will launch locally in your default web browser. You can start interacting with the data and explore job market insights.
 
 ## 📚 License
 
@@ -62,4 +62,4 @@ The JoblyticsDS dashboard is licensed under the terms of the [MIT license and Cr
 
 ## 🤜 Support
 
-If you encounter any issues, require assistance, need to report a bug or request a feature, please file an issue through our [GitHub Issues]().
+If you encounter any issues, require assistance, need to report a bug or request a feature, please file an issue through our [GitHub Issues](https://github.ubc.ca/mds-2024-25/DSCI_532_individual-assignment_yuci21st/issues).
