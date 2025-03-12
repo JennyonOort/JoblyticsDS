@@ -4,8 +4,8 @@ username: jennyonoort
 account: jennyonoort
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
-appId: 14222575
-bundleId: 9929762
+appId: 14223539
+bundleId: 9930478
 url: https://jennyonoort.shinyapps.io/JoblyticsDS/
 version: 1
 asMultiple: FALSE

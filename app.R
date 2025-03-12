@@ -8,7 +8,7 @@ library(wordcloud2)
 library(rsconnect)
 
 # Load and preprocess data
-jobs_data <- read_csv("../data/processed/data_analyst_can_clean.csv") %>%
+jobs_data <- read_csv("./data/processed/data_analyst_can_clean.csv") %>%
   mutate(
     salary_min = round(as.numeric(gsub(",", "", Min_Salary))),
     salary_max = round(as.numeric(gsub(",", "", Max_Salary))),
