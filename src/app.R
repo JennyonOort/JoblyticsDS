@@ -9,9 +9,9 @@ library(wordcloud2)
 # Load and preprocess data
 jobs_data <- read_csv("../data/processed/data_analyst_can_clean.csv") %>%
   mutate(
-    salary_min = as.numeric(gsub(",", "", Min_Salary)),
-    salary_max = as.numeric(gsub(",", "", Max_Salary)),
-    salary_avg = as.numeric(gsub(",", "", Avg_Salary))
+    salary_min = round(as.numeric(gsub(",", "", Min_Salary))),
+    salary_max = round(as.numeric(gsub(",", "", Max_Salary))),
+    salary_avg = round(as.numeric(gsub(",", "", Avg_Salary)))
   )
 
 # UI
@@ -122,19 +122,63 @@ server <- function(input, output, session) {
                   max_salary = max(salary_max, na.rm = TRUE)) %>%
         arrange(desc(avg_salary))
       
-      ggplot(salary_data, aes(x = avg_salary, y = reorder(Position, avg_salary))) +
-        geom_point(aes(color = "Average Salary"), size = 2) +  # Average Salary as points
-        geom_errorbarh(aes(xmin = min_salary, xmax = max_salary), height = 1) +  # Min and Max as error bars
-        labs(title = "Salary by Position (Min, Avg, Max)",
-            x = "Salary (CAD)",
-            y = "Position") +
-        scale_color_manual(name = "Legend", values = c("Average Salary" = "blue")) +
-        theme_minimal() +
-        theme(legend.position = "none",  # Hide `legend`
-              plot.title = element_text(face = "bold", family = "Georgia"), 
-              axis.title = element_text(family = "Georgia"), 
-              axis.text = element_text(family = "Georgia")
-        )
+      plot_ly() %>%
+        # Plot the average salary as points
+        add_trace(
+          data = salary_data,
+          x = ~avg_salary, 
+          y = ~reorder(Position, avg_salary), 
+          type = 'scatter', 
+          mode = 'markers', 
+          marker = list(size = 8, color = 'blue'),
+          text = ~paste("Position: ", Position, 
+                        "<br>Avg Salary: CAD ", sprintf("%s", prettyNum(avg_salary, big.mark = ",")),
+                        "<br>Min Salary: CAD ", sprintf("%s", prettyNum(min_salary, big.mark = ",")),
+                        "<br>Max Salary: CAD ", sprintf("%s", prettyNum(max_salary, big.mark = ","))),
+          hoverinfo = "text",
+          name = 'Avg Salary'
+        ) %>%
+        # Add lines connecting min_salary to max_salary
+        add_segments(
+          data = salary_data,
+          x = ~min_salary, 
+          xend = ~max_salary,
+          y = ~reorder(Position, avg_salary), 
+          yend = ~reorder(Position, avg_salary),
+          line = list(color = 'black', width = 2),
+          showlegend = FALSE
+        ) %>%
+        # Add markers for min_salary (with ticks)
+        add_trace(
+          data = salary_data,
+          x = ~min_salary, 
+          y = ~reorder(Position, avg_salary), 
+          type = 'scatter', 
+          mode = 'markers', 
+          marker = list(color = 'black', size = 8, symbol = 'line-ns-open'),
+          text = ~paste("Position: ", Position, 
+                        "<br>Min Salary: CAD ", sprintf("%s", prettyNum(min_salary, big.mark = ","))),
+          hoverinfo = "text",
+          showlegend = FALSE
+        ) %>%
+        # Add markers for max_salary (with ticks)
+        add_trace(
+          data = salary_data,
+          x = ~max_salary, 
+          y = ~reorder(Position, avg_salary), 
+          type = 'scatter', 
+          mode = 'markers', 
+          marker = list(color = 'black', size = 8, symbol = 'line-ns-open'),
+          text = ~paste("Position: ", Position, 
+                        "<br>Max Salary: CAD ", sprintf("%s", prettyNum(max_salary, big.mark = ","))),
+          hoverinfo = "text",
+          showlegend = FALSE
+        ) %>%
+        layout(title = "<b>Salary by Position (Min, Avg, Max)</b>",
+              xaxis = list(title = "Salary (CAD)"),
+              yaxis = list(title = "Position"),
+              font = list(family = "Georgia"),
+              showlegend = FALSE)
     })
 
     # Jobs table
