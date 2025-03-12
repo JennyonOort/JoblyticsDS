@@ -1,0 +1,12 @@
+name: JoblyticsDS
+title: JoblyticsDS
+username: jennyonoort
+account: jennyonoort
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 14222575
+bundleId: 9929762
+url: https://jennyonoort.shinyapps.io/JoblyticsDS/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE

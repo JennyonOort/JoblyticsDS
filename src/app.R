@@ -5,6 +5,7 @@ library(ggplot2)
 library(DT)
 library(shinydashboard)
 library(wordcloud2)
+library(rsconnect)
 
 # Load and preprocess data
 jobs_data <- read_csv("../data/processed/data_analyst_can_clean.csv") %>%
