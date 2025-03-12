@@ -28,7 +28,7 @@ The dataset used in this app is sourced from [Kaggle](https://www.kaggle.com/dat
 ### Prerequisites:
 To run this app locally, ensure you have the following installed:
 - [R](https://cran.r-project.org/)
-- [RStudio](https://rstudio.com/products/rstudio/download/)
+- [RStudio](https://posit.co/download/rstudio-desktop/)
 - Required R libraries: `renv`, `shiny`, `tidyverse`, `plotly`, `ggplot2`, `shinydashboard`, `DT`, `wordcloud2`, `rsconnect`
 
 ### Steps to Install:
