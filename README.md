@@ -1,4 +1,4 @@
-# JoblyticsDS
+# 📈📊 JoblyticsDS
 
 This Shiny dashboard provides interactive insights into the Canadian data analyst job market, including salary trends, in-demand skills, and detailed job listings by province and industry.
 
