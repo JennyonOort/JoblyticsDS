@@ -10,9 +10,9 @@ The demand for data analysts is rapidly increasing, with diverse industries seek
 ## 📖 App Description
 This app presents an interactive dashboard to explore data analyst job listings across Canada. Key features include:
 
-- **Salary Insights**: View average, minimum, and maximum salary data for data analyst positions by province and industry.
+- **Salary Insights**: View average, minimum, and maximum salary data for data analyst positions.
 - **Skill Trends**: Visualize the most in-demand skills for data analyst roles.
-- **Job Listings**: Explore a table of available job positions, with options to filter by province, industry, and employment type.
+- **Job Listings**: Explore a table of available job positions, with search options and sliders for filtering by salary range.
   
 You can filter data by **Province**, **Industry Type**, and **Work Type** to tailor the insights to your specific interests and goals. The dashboard offers interactive charts and detailed tables for a comprehensive analysis of the job market.
 
@@ -25,7 +25,7 @@ The dataset used in this app is sourced from [Kaggle](https://www.kaggle.com/dat
 
 ## 💻 Installation Instructions
 
-### Prerequisites:
+### Pre-Requisites:
 To run this app locally, ensure you have the following installed:
 - [R](https://cran.r-project.org/)
 - [RStudio](https://posit.co/download/rstudio-desktop/)
