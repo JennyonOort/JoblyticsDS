@@ -18,7 +18,7 @@ You can filter data by **Province**, **Industry Type**, and **Work Type** to tai
 
 #### 📹 Dashboard
 
-JoblyticsDS is hosted on [Shinyapps.io](https://www.shinyapps.io/) and can be accessed with the following link: https://jennyonoort.shinyapps.io/JoblyticsDS/
+JoblyticsDS can be accessed with the following link: https://jennyonoort.shinyapps.io/JoblyticsDS/
 
 _Note: The `app.R` file is placed in the root directory of Github in order for ShinyApps.io to deploy properly._
 
