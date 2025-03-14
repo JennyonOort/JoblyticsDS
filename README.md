@@ -7,7 +7,7 @@ Target audience: Job seekers, data analysts, HR professionals, and researchers i
 
 The demand for data analysts is rapidly increasing, with diverse industries seeking skilled professionals. However, finding the right opportunities and understanding the salary trends can be a challenge. This app aims to provide insights into the data analyst job market in Canada, helping users explore job listings, salary data, and essential job-related details. By filtering job listings based on location, industry, and employment type, users can identify opportunities and gain a better understanding of salary trends, skill requirements, and geographical distribution of data analyst jobs.
 
-## 📖 App Usage
+## 📖 App Description
 This app presents an interactive dashboard to explore data analyst job listings across Canada. Key features include:
 
 - **Salary Insights**: View average, minimum, and maximum salary data for data analyst positions.
@@ -16,14 +16,14 @@ This app presents an interactive dashboard to explore data analyst job listings 
   
 You can filter data by **Province**, **Industry Type**, and **Work Type** to tailor the insights to your specific interests and goals. The dashboard offers interactive charts and detailed tables for a comprehensive analysis of the job market.
 
-#### 📹 Dashboard
+### 📹 Dashboard
 
 JoblyticsDS can be accessed with the following link: https://jennyonoort.shinyapps.io/JoblyticsDS/
 
 _Note: The `app.R` file is placed in the root directory of Github in order for ShinyApps.io to deploy properly._
 
-#### 📹 Video Demo
-![JoblyticsDS Demo](./img/demo.mp4)
+### 📹 Demo
+![JoblyticsDS Demo](./img/demo.gif)
 
 ## 🔢 Data Source
 
