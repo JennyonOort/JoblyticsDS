@@ -16,7 +16,7 @@ This app presents an interactive dashboard to explore data analyst job listings 
   
 You can filter data by **Province**, **Industry Type**, and **Work Type** to tailor the insights to your specific interests and goals. The dashboard offers interactive charts and detailed tables for a comprehensive analysis of the job market.
 
-### 📹 Dashboard
+### 🌐 Dashboard
 
 JoblyticsDS can be accessed with the following link: https://jennyonoort.shinyapps.io/JoblyticsDS/
 
