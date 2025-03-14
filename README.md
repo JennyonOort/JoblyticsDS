@@ -7,7 +7,7 @@ Target audience: Job seekers, data analysts, HR professionals, and researchers i
 
 The demand for data analysts is rapidly increasing, with diverse industries seeking skilled professionals. However, finding the right opportunities and understanding the salary trends can be a challenge. This app aims to provide insights into the data analyst job market in Canada, helping users explore job listings, salary data, and essential job-related details. By filtering job listings based on location, industry, and employment type, users can identify opportunities and gain a better understanding of salary trends, skill requirements, and geographical distribution of data analyst jobs.
 
-## 📖 App Description
+## 📖 App Usage
 This app presents an interactive dashboard to explore data analyst job listings across Canada. Key features include:
 
 - **Salary Insights**: View average, minimum, and maximum salary data for data analyst positions.
@@ -16,8 +16,14 @@ This app presents an interactive dashboard to explore data analyst job listings 
   
 You can filter data by **Province**, **Industry Type**, and **Work Type** to tailor the insights to your specific interests and goals. The dashboard offers interactive charts and detailed tables for a comprehensive analysis of the job market.
 
-## 📹 Video App Walkthrough
-[VIDEO LINK TO BE ADDED]
+#### 📹 Dashboard
+
+JoblyticsDS is hosted on [Shinyapps.io](https://www.shinyapps.io/) and can be accessed with the following link: https://jennyonoort.shinyapps.io/JoblyticsDS/
+
+_Note: The `app.R` file is placed in the root directory of Github in order for ShinyApps.io to deploy properly._
+
+#### 📹 Video Demo
+![JoblyticsDS Demo](./img/demo.mp4)
 
 ## 🔢 Data Source
 
@@ -39,12 +45,12 @@ To run this app locally, ensure you have the following installed:
    cd DSCI_532_individual-assignment_yuci21st
    ```
 
-2. Open RStudio and run the following command in the R console to install the required libraries (if not already installed):
+2. Open RStudio and run the following command to install the required libraries (if not already installed):
     ```R
     install.packages(c("renv", "shiny", "tidyverse", "plotly", "ggplot2", "shinydashboard", "DT", "wordcloud2", "rsconnect"))
     ```
 
-3. Navigate to the project folder and run the following R command in the console to restore the environment:
+3. Navigate to the project folder and run the below R command in the console to restore the environment:
     ```R
     renv::restore()
     ```

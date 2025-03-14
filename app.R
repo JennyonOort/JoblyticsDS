@@ -68,8 +68,8 @@ ui <- dashboardPage(
       id = "tabset1", height = "100%", width = 12,
       tabPanel("Dashboard",
         fluidRow(
-          box(plotlyOutput("skills_plot", height = "600px"), width = 6),
-          box(plotlyOutput("salary_plot", height = "600px"), width = 6)
+          box(plotlyOutput("skills_plot", height = "550px"), width = 6),
+          box(plotlyOutput("salary_plot", height = "550px"), width = 6)
         )
       ),
       tabPanel("Table",
